@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta name="description" content="Build your Ecommerce/catalogue website with Pixigo with just Rs.699/month.">
+    <meta name="keywords" content="Pixigo,ecommerce,catalogue,Buildwebsite,freessl">
+    <link rel="shortcut icon" href="https://cdn.neoxapp.com/pixigo/default/favicon.png" type="image/x-icon">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;699;600&display=swap"
+        rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Fredoka:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;699;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- AOS link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- noty css  -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+
+    <link rel="stylesheet" href="/pixigo dashboard/css/common.css">
+    <link rel="stylesheet" href="/pixigo dashboard/css/login.css">
+    <link rel="stylesheet" href="/pixigo dashboard/css/customselect.css">
+
+
+
+</head>
+
+<body>
+
+    <div id="fullbody">
+        <div class="navbarlogin">
+            <div class="left">
+                <h2 class="lohofont">PIXIGO</h2>
+            </div>
+            <div class="right">
+                <div class="signuploginbtn">
+                    <p>Signup</p>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="mainbox">
+                <div class="imagedivsign"><img src="/pixigo dashboard/images/Tablet login-pana.png" alt="" srcset=""></div>
+                <div class="contentdiv">
+                    <form action="" id="loginform">
+                        <br>
+                        <center> <big>
+                                <h2>Login</h2>
+                            </big></center>
+
+                        <div class="inputdiv">
+                            <div class="icondiv"><img src="/pixigo dashboard/icons/icons8-account-48 (1).png" alt=""></div>
+                            <div class="input"><input required id="email" type="text" placeholder="Enter Username/Email Here..."></div>
+                        </div>
+                        <div class="inputdiv">
+                            <div class="icondiv"><img src="/pixigo dashboard/icons/icons8-lock-48.png" alt=""></div>
+                            <div class="input"><input required id="password" type="text" placeholder="Enter Password Here..."></div>
+                        </div>
+                            <center>
+                                <button type="submit" class="continuebtnstyl"> Continue</button>
+                            </center>
+                        <div class="midunderlinediv">
+                            <center>
+                                <big>
+                                    <p
+                                        style="background-color: white; display: inline-block; padding: 0 5px; position: relative; z-index: 2; font-size: 1.5rem;">
+                                        OR</p>
+                                </big>
+                            </center>
+                            <div class="midunderline"></div>
+                        </div>
+                        <div class="continuewithgoogle" id="auth-button-google">
+                            <div class="googleicon"><img src="/pixigo dashboard/icons/icon-google.png" alt=""></div><small>
+                                <p>Continue With Google</p>
+                            </small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+
+
+
+    <!-- j quary cdn  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <!-- AOS  script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+
+    <script src="/pixigo dashboard/js/customselect.js"></script>
+    <script src="/pixigo dashboard/js/login.js"></script>
+    <script src="/pixigo dashboard/js/loginform.js"></script>
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

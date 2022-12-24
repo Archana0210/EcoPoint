@@ -1,0 +1,428 @@
+#maindiv{
+    height: auto ;
+    background-color: #F0FFF3;
+    width: 100%;
+}
+.maxwidth{
+    max-width: 1800px;
+    margin: auto;
+}
+.mainheading{
+    font-size: 1.5rem;
+    max-width: 70rem;
+    margin-top: 1rem;
+    padding: 0 1rem ;
+}
+.getstarted{
+    width: 12rem;
+    height: 3rem;
+    background-color: #404040;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+
+.mediumfont{
+    margin: 1rem;
+}
+.mainimage{
+    width: 90%;
+    padding-bottom: 2rem;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+}
+.mainimage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 18px 50px -10px rgb(0 0 0 / 20%);
+}
+
+.remaingcontent{
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+}
+.mb{
+    margin-bottom: 1rem;
+}
+
+
+.headingbottomline{
+  position: relative;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.subheading{
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
+}
+.headingbottomline:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 3.5px;
+  bottom: -14px;
+  left: 0;
+background-color: #C9C6FF;
+border-radius: 10px;
+}
+.flexdiv1{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.colrev{
+  flex-direction: column-reverse;
+}
+.imagediv,.textdiv{
+  width: 100%;
+  padding: 1rem;
+}
+.imagediv{
+  overflow: hidden;
+  border-radius: 70px;
+}
+.imagediv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.extrapaddingleft{
+padding-left: 1rem;
+}
+
+.textalignright{
+  display: block;
+  flex-direction: column;
+  align-items: self-end;
+  margin-right: 20px;
+}
+
+
+
+/* slider css */
+
+
+/* rowtestimonials  */
+.parentrow{
+    position: relative;
+  }
+  .rowtestimonials{
+    white-space: nowrap;
+      overflow: scroll;
+      width: 95%;
+      margin: auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      display: flex;
+      scroll-behavior: smooth;
+      /* justify-content: center; */
+  }
+  .rowtestimonials::-webkit-scrollbar {
+    display: none;
+  }
+  .testimonials {
+    width: 350px;
+    display: inline-block;
+    margin: 0 1rem;
+    cursor: pointer;
+    
+    /* overflow: hidden; */
+  }
+  .testimonialsimg {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+   
+  }
+  .testimonialsimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+    width: 100%;
+    transition: 0.4s all ease-in-out;
+  }
+  
+  .testimonialsimg:hover img {
+    /* transform: scale(1.07); */
+    /* height: 420px; */
+  
+  }
+  .testimonialstext{
+    background-color: #F0FFF3;
+    height: auto;
+    min-height: 200px;
+    padding-top: 60px;
+    position: relative;
+    top: -50px;
+    border-radius: 20px;
+    width: 350px;
+ 
+
+  }
+  .testimonialstext > *{
+white-space: normal;
+  }
+
+  .testimonialstexthead big p{
+    font-weight: 600;
+  }
+  .testimonialstext center >p{
+    text-align: center;
+    padding: 1rem;
+    padding-top: 1.5rem;
+  }
+  .scrollbtns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+  
+  
+  
+    /* display: none; */
+  
+  }
+  
+  .scrollbtns>div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .scrollbtns>div span{
+    font-size: 3rem;
+    font-weight: 100;
+  }
+  
+  .scrollleftbtn{
+  margin-left: 5%;
+  }
+  .scrollrightbtn{
+    margin-right: 5%;
+  
+  }
+  
+  .mp{
+    padding-top: 2rem;
+  }
+  
+
+
+
+  
+
+
+/* footer css  */
+footer {
+    /* background-color: black;
+    color: white; */
+    position: absolute;
+    /* top: 0; */
+    /* bottom: ; */
+    /* border-radius: 30px 30px 0 0; */
+    width: 100%;
+    border-top: 1.5px solid #F1F1F1;
+  }
+  footer > div {
+    padding: 1rem;
+    margin: auto;
+  }
+  #footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 1760px;
+    margin: auto;
+  }
+  .footer-link{
+    width: 100%;
+  }
+  .footer-link p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.3rem 0rem;
+    color: #808080;
+  }
+  footer > div>div h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+
+  }
+
+  .footerheading{
+
+  }
+  .footer-link a{
+    text-decoration: none;
+    color: #808080;
+  }
+
+
+.whypixigopoints{
+    padding-left: 1.5rem;
+}
+
+
+.heading{
+    font-size: 1.3rem;
+    /* margin: 2rem auto; */
+  }
+
+
+@media only screen and (min-width: 786px) {
+    .footer-link p {
+        font-size: 1.1rem;
+      }
+      footer > div>div h4 {
+        font-size: 1.2rem;
+      }
+
+    .scrollbtns>div{
+        display: block;
+    }
+
+    .heading{
+        font-size: 2rem;
+    }
+
+    .list{
+        font-size: 1.4rem;
+    }
+    .listicon{
+        width: 30px;
+        height: 30px;
+    }
+
+    #footer-links {
+        /* display: block; */
+        /* flex-direction: column; */
+    flex-direction: row;
+
+      }
+      .footer-link{
+        width: 25%;
+      }
+
+
+    .rowtestimonials{
+        /* justify-content: center; */
+    }
+
+    .rowtestimonials{
+        width: 80%;
+        /* padding-left: 0rem;
+        padding-right: 2rem; */
+      }
+      .scrollbtns{
+        display: flex;
+      }
+
+
+
+    .listparentdiv{
+        gap: 2rem;
+    }
+
+    .getstarted{
+        width: 14rem;
+        height: 4rem;
+        background-color: #404040;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+        font-weight: bold;
+        letter-spacing: 1.1px;
+        cursor: pointer;
+        
+    }
+    
+    #maindiv{
+        height: 100vh;
+    }
+    .mainimage{
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+    .mainheading{
+        font-size: 3rem;
+        max-width: 70rem;
+        margin-top: 2rem;
+    }
+    .mediumfont{
+        font-size: 1.5rem;
+    }
+    .whypixigodiv{
+        flex-direction: row;
+    }
+    
+    .whypixigoimage{
+        width: 60% !important;
+
+    }
+    .whypixigopoints{
+        width: 40% !important;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        
+    }
+    .mb{
+        margin-bottom: 3rem;
+    }
+
+    .flexdiv1{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+      
+    }
+    .flexdiv1>div{
+      width: 50%;
+    }
+
+    .extrapaddingleft{
+      padding-left: 3rem;
+    }
+
+    .textalignright{
+      display: flex;
+      flex-direction: column;
+      align-items: self-end;
+      margin-right: 20px;
+    }
+
+
+}

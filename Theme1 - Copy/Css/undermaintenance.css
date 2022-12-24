@@ -1,0 +1,22 @@
+main img {
+    width: 100%;
+    margin: auto;
+}
+main h2{
+    font-size: 2rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* desktop view  */
+@media only screen and (min-width: 786px) {
+    main img {
+        width: 50%;
+        margin: auto;
+    }
+    main h2{
+        font-size: 3rem;
+    }
+}

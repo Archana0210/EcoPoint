@@ -1,0 +1,177 @@
+.ordersummary{
+    /* padding: 10px; */
+    max-width: 30rem;
+    width: 100%;
+}
+main>div{
+    margin: auto;
+}
+
+.commanyname h2{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.showordersummarybtndiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10px;
+    border-top: 1px solid var(--header-border-color);
+    border-bottom: 1px solid var(--header-border-color);
+    margin: 1rem auto;
+
+}
+.opencloseordersummary{
+    padding: 1rem;
+}
+.contactinfo{
+    padding: 1rem;
+    max-width: 40rem;
+}
+.showhidetext{
+    display: inline-block;
+}
+.showordersummarybtndiv>div{
+    display: flex;
+    align-items: center;
+}
+.shopping_carticon{
+    margin-right: 7px;
+    color: var(--headingcolor);
+}
+
+.form-input{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--header-border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.checkboxdiv{
+    display: flex;
+    margin-top: 1rem;
+}
+.checkboxdiv input{
+    padding: 10px;
+    margin: 0 10px;
+}
+
+#state{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--header-border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+#submitbtn{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--header-border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+
+.finallistproduct{
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+.finalproduct{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+
+}
+.finalproducyimgdiv{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+    overflow: hidden;
+    border: 1px solid var(--header-border-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.finalproducyimgdiv img{
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+.productnameandsize{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.applycode{
+    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+    border-bottom: 1px solid var(--header-border-color);
+    padding-bottom: 1rem;
+
+}
+.applycode>*{
+    height: 2.5rem;
+    border: 1px solid var(--header-border-color);
+    border-radius: 10px;
+}
+.applycode input{
+    width: 100%;
+    margin-right: 1rem;
+    padding: 5px;
+    padding-left: 10px;
+}
+.applycode button{
+    width: 100px;
+}
+
+.shppingorsubtotal{
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--header-border-color);
+
+}
+.shppingorsubtotal>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.totalprice{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.totalprice div h2{
+    display: inline-block;
+    padding-left: 10px;
+    color: var(--headingcolor);
+}
+
+@media only screen and (min-width: 1000px) {
+    main{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    main>div{
+        margin: unset;
+    }
+
+    .ordersummary{
+        padding-top: 3rem;
+    margin-left: 2rem;
+    border-left: 1px solid var(--header-border-color);
+    padding-left: 2rem;
+    }
+   
+}

@@ -1,0 +1,596 @@
+.productshine{
+  min-height: 15rem;
+}
+#mobileimagediv{
+  margin-bottom: 1rem;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+
+.productmaindiv {
+  margin-top: 0rem;
+  width: 100%;
+}
+.productgrid {
+  width: 100%;
+}
+.mobileprodctdisplay {
+  width: 100%;
+  background-color: white;
+}
+.deskstopproductdisplay {
+  display: none;
+}
+.productinfoside {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 0;
+  /* background-color: blue; */
+}
+
+.imagediv {
+  width: 45%;
+  display: inline-block;
+  object-fit: cover;
+  margin: 1.5%;
+  margin-top: 0;
+  margin-bottom: 1.5%;
+  overflow: hidden;
+  position: relative;
+  /* float: left; */
+  height: 100%;
+  max-height: 500px;
+}
+.imagediv img {
+  object-fit: cover;
+  /* width: 100%; */
+  height: 100%;
+  width: 100%;
+
+  transition: 0.2s all ease-in-out;
+  /* margin: 0.5rem; */
+}
+.imagediv:hover img {
+  transform: scale(1.05);
+}
+
+/* ---------------------slider css ---------------------------------*/
+.mySlides2 {
+  display: none;
+  /* min-height: 20rem; */
+  object-fit: cover;
+}
+.firstimage{
+ display: block;
+}
+.mySlides2 img{
+  width: 100%;
+  height: 100%;
+  min-height: 15rem;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--header-border-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 1rem;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.productinfoside-text {
+  width: 100%;
+  height: 100%;
+  max-width: 35rem;
+  margin: auto;
+  /* background-color: aqua; */
+}
+.productname {
+  font-size: 2rem;
+  text-align: center;
+}
+.pricevalue {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.producttitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+#selectsize {
+  font-size: 1.1rem;
+  text-align: center;
+  /* border-radius: 20px; */
+  width: 100%;
+  height: 3rem;
+  max-width: 30rem;
+  margin-top: 2rem;
+  border-style: inset;
+  border: 1px solid !important;
+  border-color: var(--header-light-text-color);
+  outline-color: var(--header-light-text-color);
+}
+#selectsize option {
+  
+}
+
+.contactus{
+  margin-top: 1rem;
+  padding: 1rem 0;
+  /* background-color: aqua; */
+  width: 100%;
+position: relative;
+max-width: 30rem;
+
+}
+.contactus h2{
+  display: inline-block;
+  background-color: white;
+  padding: 0 15px;
+  position: absolute;
+  top: 0px;
+  /* margin: auto; */
+  right: 38%;
+
+
+}
+
+.underline{
+  height: 1.4px ;
+  width: 100%;
+  background-color: var(--header-light-text-color);
+  /* max-width: 20rem; */
+}
+
+.btncenter {
+  margin: auto;
+}
+.addtocart {
+  width: 100% !important;
+  max-width: 30rem;
+  margin-top: 1rem;
+}
+.placeorder {
+  width: 100% !important;
+  max-width: 30rem;
+  margin-top: 1rem;
+}
+
+/* other options css  */
+.otheroptions {
+  display: none;
+  max-width: 35rem;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.otheroptions span {
+
+  color: var(--header-light-text-color);
+}
+.optionheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.shippingopendiv {
+  margin-top: 2rem;
+
+  border-top: 1.5px solid var(--header-light-text-color);
+}
+.optionopendiv {
+  padding: 2rem 0;
+  border-bottom: 1.5px solid var(--header-light-text-color);
+}
+.openoptionsdiv {
+  display: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.openoptionsdiv ul {
+  margin: 1rem auto;
+  padding-left: 1.2rem;
+  color: var(--headingcolor);
+}
+.openoptionsdiv ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------------review--------------------------------------  */
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: var(--headingcolor);
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: var(--headingcolor);
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: var(--headingcolor);
+}
+
+.stars span {
+  font-size: 1.3rem;
+  color: var(--headingcolor);
+}
+.reviewpname p {
+  padding-left: 3px;
+}
+.reviewtext {
+  padding: 1rem 0;
+}
+
+.writeareviewbtn {
+  width: 100% !important;
+  max-width: 13rem;
+  margin-top: 3rem;
+}
+
+.reviewdiv {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1.5px solid var(--header-light-text-color);
+}
+
+/* slider css end  */
+
+/* sticky navbar  */
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 4;
+}
+.navbardesktop {
+  background-color: white;
+  border-bottom: 0.7px solid var(--header-border-color);
+}
+
+/* .sticky + .productmaindiv{
+    padding-top: 50px;
+} */
+
+/* --------------------------------Cart modal------------------------------------  */
+
+/* The Modal (background) */
+.modalCart {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-contentCart {
+  background-color: #fefefe;
+  /* padding: 20px; */
+  border: 1px solid #888;
+  width: 100%;
+  height: 100%;
+  max-width: 22rem;
+  margin-left: calc(100% - 22rem);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* The Close Button */
+.closeCart {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+}
+
+.closeCart:hover,
+.closeCart:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Cartheading {
+  /* padding: 1rem; */
+  /* text-align: center; */
+  border-bottom: 1px solid var(--header-border-color);
+}
+.Cartheading > * {
+  padding: 1rem;
+}
+.Cartapplybtn-parent {
+  padding: 1rem;
+  border-top: 1px solid var(--header-border-color);
+}
+.Cartapplybtn-parent > h2 {
+  padding-bottom: 1rem;
+}
+
+.Cartapplybtn {
+  width: 100%;
+}
+.Cartmodalcontent {
+  padding: 1rem;
+  /* padding-left: 2rem;
+    padding-right: 2rem; */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.Cartmodalcontent::-webkit-scrollbar {
+  display: none;
+}
+/* body::-webkit-scrollbar{
+    display: none;
+  } */
+.carteligiblety {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid var(--header-border-color);
+}
+
+/* ---------cart  product  div */
+.cartproductdiv {
+    position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.cartproductdivleft {
+  width: 40%;
+}
+.cartproductdivright {
+  padding-left: 1rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.cartproductdivleft img {
+  width: 100%;
+}
+.cartproductdivright>div > h2 {
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.cartpsize,
+.cartpprice {
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
+}
+
+/* -------------Quantity number box--------------  */
+.quantitynumberbox{
+    border: 1px solid var(--header-border-color);
+    max-width: 120px;
+display: inline-block;
+    padding: 0.7rem 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+.quantitynumberbox span {
+  cursor: pointer;
+  font-size: 1rem;
+}
+.number {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* width: 100%; */
+
+ 
+}
+.minus,
+.plus {
+
+}
+.quantitynumberbox input {
+
+  border: none;
+  text-align: center;
+  max-width: 50px;
+  /* font-size: 26px; */
+ 
+}
+.cartleftbottombox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartremovebtn h2{
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.cartremovebtn h2:hover{
+    text-decoration: underline;
+}
+
+/* -------------Quantity number box end --------------  */
+
+
+/* ----------------------------------------product image modal-----------------------------------------  */
+/* The Modal (background) */
+.modalproductimage {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 12; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-contentproductimage {
+  background-color: #fefefe;
+ width: 100%;
+ height: auto;
+ min-height: 100vh;
+}
+
+/* The Close Button */
+/* .closeproductimage {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+} */
+
+.closeproductimage:hover,
+.closeproductimage:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.Reviewsopendiv{
+  display: none;
+}
+
+.alllinks{
+  margin-bottom: 2rem;
+}
+#selectsize{
+   background-color: transparent;
+}
+
+.alllinks a{
+  text-decoration: none;
+}
+/* ---------------------------------------- end product image modal-----------------------------------------  */
+
+
+@media only screen and (min-width: 1000px) {
+  .mobileprodctdisplay {
+    display: none;
+  }
+  .deskstopproductdisplay {
+    display: inline-block;
+    /* display: flex; */
+
+    float: left;
+    width: 55%;
+    padding-left: 1rem;
+    /* height: 10rem; */
+    /* background-color: green; */
+  }
+  .productinfoside {
+    float: left;
+    width: 45%;
+    padding: 0;
+    padding-right: 1rem;
+    /* background-color: blue; */
+  }
+  .productname {
+    font-size: 1.5rem;
+  }
+  .productmaindiv {
+    margin-top: 1rem;
+  }
+
+  .btncenter {
+    margin-left: 0;
+  }
+  .fullwidth {
+    max-width: 20rem !important;
+  }
+  .productname,
+  .pricevalue {
+    text-align: left;
+  }
+
+.contactus{
+  width: 20rem;
+}
+  /* .sticky + .productmaindiv{
+        padding-top: 120px;
+    } */
+}

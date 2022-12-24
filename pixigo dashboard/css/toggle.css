@@ -1,0 +1,61 @@
+:root {
+	/* --on: #0a0; */
+	--on: #6c63ff;
+	--off: #555;
+	--scale: 8;
+	--toggle-width: calc(var(--scale) * 7.5px);
+	--toggle-height: calc(var(--scale) * 2.8125px);
+	--border-width: calc(var(--scale) * 0.5px);
+	--transition-time: 0.25s;
+}
+
+.switch {
+	position: relative;
+	display: block;
+	/* margin-inline: auto; */
+	cursor: pointer;
+
+	width: var(--toggle-width);
+	height: var(--toggle-height);
+
+	color: var(--off);
+	background-color: currentcolor;
+
+	border: var(--border-width) solid currentcolor;
+	border-radius: var(--toggle-height);
+
+	transition: color var(--transition-time) ease-out;
+
+	box-shadow: -1px -1px 1px #fff8, 1px 1px 1px #0008, 0 1px 1px #0008,
+		0 3px 5px #0008 inset;
+}
+
+.switch::after {
+	content: "";
+	position: absolute;
+	background-color: white;
+
+	/* 	Make it fit and make it round */
+	height: 100%;
+	aspect-ratio: 1;
+	border-radius: 100%;
+
+	/* 	Put it on the left */
+	left: 0;
+	transform: translateX(0);
+
+	/* 	Set the animation speed and easing */
+	transition: left var(--transition-time) ease-out,
+		transform var(--transition-time) ease-out;
+
+	box-shadow: 0 3px 5px #0008;
+}
+
+#checkbox:checked + .switch {
+	color: var(--on);
+}
+
+#checkbox:checked + .switch::after {
+	left: 100%;
+	transform: translateX(-100%);
+}

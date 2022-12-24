@@ -1,0 +1,270 @@
+
+
+
+/* Best Seller  */
+.bestsellerheading {
+  /* display: inline-block; */
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestsellerheading h2{
+  font-size: 2.5rem;
+}
+
+.product {
+  width: 270px;
+  /* overflow: hidden; */
+}
+.productimg {
+  height: 400px;
+}
+.productimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.lSPager {
+  display: none;
+}
+.lSAction > a {
+  background-color: var(--headingcolor);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1 !important;
+}
+.lSAction > a::after {
+  position: absolute;
+  content: "";
+  margin: auto;
+  border: solid white;
+  border-width: 0px 4px 4px 0px;
+  display: inline-block;
+  padding: 5px;
+}
+.lSAction > .lSPrev::after {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.lSAction > .lSNext::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.active,
+.dot:hover {
+  background-color: white;
+}
+#autoWidth,#autoWidth1{
+  
+  margin: auto;
+}
+#autoWidth li {
+  margin: 0 1rem;
+}
+
+#autoWidth1 li {
+  margin: 0 1rem;
+}
+.max-width{
+  max-width: 1600px;
+  margin: auto;
+}
+
+.productrow {
+  padding: 0;
+  max-width: 1600px;
+  margin: auto;
+}
+.productrow ul {
+  height: 485px;
+}
+
+.divbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.animatebtn {
+  height: 2.5rem;
+  background-color: var(--btnbackground);
+  color: white;
+  display: flex;
+  min-width: 10rem;
+
+  /* width: 250px; */
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  border: 1px solid var(--btnbackground);
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* .animatebtn:hover{
+  box-shadow: inset 250px 0 0 0 white;
+  color: var(--btnbackground);
+  font-weight: 600 !important;
+
+} */
+.animatebtn:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  
+  opacity: 0;
+  content: "";
+  background-color: white;
+  color: var(--btnbackground);
+}
+.animatebtn:hover{
+  color: var(--btnbackground);
+}
+.animatebtn:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  background-color: white;
+
+  color: var(--btnbackground);
+  font-weight: 600 !important;
+}
+
+
+
+
+
+.animatebtn-light {
+  height: 2.5rem;
+  background-color: white ;
+  color: var(--btnbackground);
+  display: flex;
+  min-width: 10rem;
+  /* width: 250px; */
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  border: 1px solid var(--btnbackground);
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.animatebtn-light:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--btnbackground);
+  color: white;
+}
+.animatebtn-light:hover{
+  color: white;
+}
+.animatebtn-light:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  background-color: var(--btnbackground);
+
+  color: white;
+  font-weight: 600 !important;
+}
+/* .producttext{
+  margin-top: 10px;
+} */
+.producttext>*{
+  padding: 3px;
+  padding-top: 8px;
+
+}
+
+
+.bestseller{
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+
+/* -------------------------------------parallax------------------------  */
+.parallaxparent{
+    /* The image used */
+  background-image: url('https://cdn.shopify.com/s/files/1/0011/9242/7564/files/img_parallax_3_1500x.jpg?v=1527705026');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.parallaxchild{
+  background-color: white;
+  max-width: 15rem;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+
+
+
+
+
+
+/* rowproduct  */
+
+.rowproduct{
+  
+}
+.product{
+  display: inline-block;
+}
+
+
+/* phone view  */
+@media only screen and (max-width: 786px) {
+  .lSAction > a {
+    display: none;
+  }
+  .productimg {
+    height: 350px;
+  }
+  .product {
+    width: 250px;
+  }
+}

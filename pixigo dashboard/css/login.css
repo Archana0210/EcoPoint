@@ -1,0 +1,163 @@
+.navbarlogin{
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    /* background-color: aqua; */
+
+}
+
+#fullbody > main{
+    min-height: calc(100vh - 4.5rem);
+    width: 100%;
+    /* background-color: black; */
+    /* display: flex;
+    
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+
+}
+
+.imagedivsign{
+    display: none;
+}
+
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+max-width: 1700px;
+margin: auto;
+/* background-color: rgb(53, 93, 93); */
+}
+.mainbox>div{
+    width: 100%;
+
+}
+
+.contentdiv{
+    padding: 1rem;
+    
+}
+.bigheading{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.inputdiv{
+    width: 90%;
+    height: 4rem;
+    max-width: 30rem;
+    border-bottom: 2.5px solid #555555;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 6px;
+    margin-top: 1.3rem;
+
+    /* background-color: black; */
+}
+.inputdiv input{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+
+}
+.icondiv{
+    width: 3rem;
+}
+.icondiv img{
+    width: 70%;
+    
+}
+.input{
+    width: calc(100% - 3rem);
+    height: 48px;
+    display: flex;
+    align-items: center;
+
+}
+
+.input input:focus{
+    outline: none;
+}
+
+.midunderlinediv{
+    max-width: 30rem;
+    margin: auto;
+    position: relative;
+
+}
+.midunderline{
+ height: 2px;
+ width: 100%;
+ background-color: #D7D7D7;
+ position: absolute;
+ top: 50%;
+ z-index: 0;
+
+}
+.continuewithgoogle{
+    background-color: #2D2D2D;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    margin: 2rem auto; 
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 10px;
+
+}
+.googleicon{
+    width: 1.4rem;
+    height: 1.4rem;
+    
+
+}
+.googleicon img{
+    width: 100%;
+
+}
+
+
+
+
+/* dasktop css */
+
+@media only screen and (min-width: 786px) {
+
+    .imagedivsign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    /* background-color: rgb(53, 93, 93); */
+    }
+   
+    .imagedivsign img{
+     width: 80%;
+     height: 80%;
+     margin: auto;
+    
+     object-fit: contain;
+    }
+    
+    .mainbox>div{
+        width: 50%;
+    
+    }
+    #fullbody > main{
+        display: flex;
+    }
+    .bigheading{
+        font-size: 2.5rem;
+    }
+    
+
+}

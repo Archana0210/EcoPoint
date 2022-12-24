@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- light slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css"
+        integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/Theme1 - Copy/Css/common.css">
+    <link rel="stylesheet" href="/Theme1 - Copy/Css/index.css">
+    <link rel="stylesheet" href="/Theme1 - Copy/Css/footer.css">
+    <link rel="stylesheet" href="/Theme1 - Copy/Css/searchresultpage.css">
+    <!-- <link rel="stylesheet" href="/Css/productpage.css"> -->
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div id="myModalfilter" class="modalfilter">
+
+        <!-- Modal content -->
+        <div class="modal-contentfilter ">
+            <div class="filterheading">
+                <span class="closefilter">&times;</span>
+                <h2 class="mediumfonth2">Filters</h2>
+            </div>
+            <div class="filtermodalcontent">
+                <h2 class="smallfonth2">Availability</h2>
+                <ul>
+                  <li><h2 class="smallfonth2">In stock</h2></li>
+                  <li><h2 class="smallfonth2">Out of stock</h2></li>
+                  <li><h2 class="smallfonth2">By Price </h2></li>
+                </ul>
+
+                <div class="resetfilterbtn">
+                  <div class="animatebtn"><p class="btnstyle">REST</p></div>
+                </div>
+            </div>
+            <div class="filterapplybtn-parent">
+
+                <div class="filterapplybtn">
+                    <div class="animatebtn"><p class="btnstyle">SEE RESULT</p></div>
+    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+       <!-- The Modal -->
+       <div id="myModalsearch" class="modalsearch">
+
+        <!-- Modal content -->
+        <div class="modal-contentsearch max-width"  id="resultparentele" onscroll="scrollfunctionforsearch()">
+            <div class="searchicondiv">
+                <span class="material-symbols-outlined ">
+                    search
+                </span>
+                <input class="mediumfonth2" id="searchinput" type="text" onkeyup="searchresult()" placeholder="Search...">
+
+                <span class="closesearch">&times;</span>
+            </div>
+
+            <div class="searchresultdiv">
+                <div id="appendsearch" class="resultproduct gridSR" >
+                    <div class="productR ">
+                        <div class="image-divSR">
+                            <!-- <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10356859/2019/8/8/b783aef9-c902-462e-af73-de159bfd011c1565256752191-Libas-Women-Kurta-Sets-2081565256750830-1.jpg"
+                                alt=""> -->
+                        </div>
+                        <div class="producttextR">
+                            <h2 class="smallfonth2 productnameSR">Edie Cascade Wrap Mini Dress Black</h2>
+                            <p class="productpriceSR">&#8377;159.00 </p>
+                        </div>
+                    </div>
+                    <div class="productR ">
+                        <div class="image-divSR">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10356859/2019/8/8/b783aef9-c902-462e-af73-de159bfd011c1565256752191-Libas-Women-Kurta-Sets-2081565256750830-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="producttextR">
+                            <h2 class="smallfonth2 productnameSR">Edie Cascade Wrap Mini Dress Black</h2>
+                            <p class="productpriceSR">&#8377;159.00 </p>
+                        </div>
+                    </div>
+                    <div class="productR ">
+                        <div class="image-divSR">
+                            <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10356859/2019/8/8/b783aef9-c902-462e-af73-de159bfd011c1565256752191-Libas-Women-Kurta-Sets-2081565256750830-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="producttextR">
+                            <h2 class="smallfonth2 productnameSR">Edie Cascade Wrap Mini Dress Black</h2>
+                            <p class="productpriceSR">&#8377;159.00 </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="mobilelist">
+                <ul id="navbarmobilemodal">
+                    <li><a href="/Theme1 - Copy/Html/index.html">
+                        <h2 class="smallfonth2 Home hover-underline-animation  nav">Home</h2>
+                    </a>
+                <li><a href="/Theme1 - Copy/Html/recycle.html">
+                        <h2 class="smallfonth2 Home hover-underline-animation  nav">Recycled</h2>
+                    </a>
+                <li><a href="/Theme1 - Copy/Html/reuse.html">
+                        <h2 class="smallfonth2 Home hover-underline-animation  nav">Reusable</h2>
+                    </a>
+                <li><a href="/Theme1 - Copy/Html/handmade.html">
+                        <h2 class="smallfonth2 Home hover-underline-animation  nav">Hand Made</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <h2 class="smallfonth2 About hover-underline-animation  nav">About</h2>
+                    </a>
+                </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!------------- narbar --------------->
+    <div id="fullnave">
+        <div class="discountinfobox">
+            <p id="announcement">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <div class="navbardesktop" id="navbar">
+            <div class="navbar-desktop-top">
+                <div class="navbar-desktop-top-left"></div>
+                <div class="navbar-desktop-top-center logonavbar" id="logonavbardesktop">
+                    <img src="/Theme1 - Copy/images/logo.jpeg" alt="">
+                </div>
+                <div class="navbar-desktop-top-right flex">
+                    <h2 id="myBtnsearch" class="smallfonth2 Search">Search</h2>
+
+                    <h2 id="callnow" class="smallfonth2"><a href="/Theme1 - Copy/Html/cart.html">Cart <span
+                                style="font-size: 1.2rem; margin-left:8px;" class="material-symbols-outlined">
+                                shopping_cart
+                            </span></a></h2>
+
+                </div>
+            </div>
+            <div class="navbar-desktop-bottom">
+                <ul id="navbarbottomdesktop">
+                    <li><a href="/Theme1 - Copy/Html/index.html">
+                            <h2 class="smallfonth2 Home hover-underline-animation  nav">Home</h2>
+                        </a>
+                    <li><a href="/Theme1 - Copy/Html/recycle.html">
+                            <h2 class="smallfonth2 Home hover-underline-animation  nav">Recycled</h2>
+                        </a>
+                    <li><a href="/Theme1 - Copy/Html/reuse.html">
+                            <h2 class="smallfonth2 Home hover-underline-animation  nav">Reusable</h2>
+                        </a>
+                    <li><a href="/Theme1 - Copy/Html/handmade.html">
+                            <h2 class="smallfonth2 Home hover-underline-animation  nav">Hand Made</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index.html">
+                            <h2 class="smallfonth2 About hover-underline-animation  nav">About</h2>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="navbarmobile" id="navbar-mobile">
+            <div class="navbar-phone-left" id="myBtn"><span class="material-symbols-outlined">
+                    menu
+                </span></div>
+            <div class="navbar-phone-center logonavbar" id="navbarlogomobile"><img src="/Theme1 - Copy/images/logo.png"
+                    alt=""></div>
+            <div class="navbar-phone-right flex">
+                <span class=" Search material-symbols-outlined">
+                    search
+                </span>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <h2 class="mediumfonth2 collectionname max-width">Recycled</h2>
+    <div class="collectionmaindiv maindiv max-width">
+
+
+            <div class="leftfilterrow">
+                <h2 class="smallfonth2">Availability</h2>
+                  <ul>
+                    <li><h2 class="smallfonth2">In stock</h2></li>
+                    <li><h2 class="smallfonth2">Out of stock</h2></li>
+                    <li><h2 class="smallfonth2">By Price </h2></li>
+                  </ul>
+
+                  <div class="resetfilterbtn">
+                    <div class="animatebtn"><p class="btnstyle">REST</p></div>
+                  </div>
+            </div>
+
+            <div class="grid">
+
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="/Theme1 - Copy/images/c1.webp" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="https://cdn.shopify.com/s/files/1/0467/1573/2136/products/Sehar_1_1000x.jpg?v=1658575245" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="/images/c1.webp" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16335430/2022/7/15/27ca1ffd-066b-47cb-8443-d5499b233f101657886482560-Bagsy-Malone-Black-Animal-PU-Oversized-Shopper-Handheld-Bag--1.jpg" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="/images/c1.webp" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="/images/c1.webp" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="https://cdn.shopify.com/s/files/1/0467/1573/2136/products/Sehar_1_1000x.jpg?v=1658575245" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="/images/c1.webp" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+                <div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16335430/2022/7/15/27ca1ffd-066b-47cb-8443-d5499b233f101657886482560-Bagsy-Malone-Black-Animal-PU-Oversized-Shopper-Handheld-Bag--1.jpg" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">Edie Cascade Wrap Mini Dress Dusty Blue</h2>
+                        <h2 class="smallfonth2 productprice">$159.00</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+    </div>
+
+
+    <!-- filter modal  -->
+    <div class="filterbtnbottommobile max-width">
+        <button id="myBtnfilter"><h2 class="smallfonth2">Filter</h2></button>
+    </div>
+
+
+
+
+
+
+
+
+
+   <!-- Footer  -->
+   <div id="footerbody" class="max-width">
+
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo" id="footername">Something</h1>
+
+            <h2>Reach Us</h2>
+
+            <!-- <a href="tel:+919871511115">+91 9871511115</a> -->
+            <address id="address">
+                5534 Somewhere In. The World 22193-10212<br>
+
+
+
+                <a class="footer__btn" target="_blank" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+            <div class="socialmedialogo" id="socialmedialogos">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">SHOP ONLINE</h2>
+
+                <ul class="nav__ul" id="footercatagory">
+                    <li>
+                        <a href="#">Online</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Print</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Alternative Ads</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title" id="foronlystorename">Technology</h2>
+
+                <ul class="nav__ul " id="footerextra">
+                    <li>
+                        <a href="#">Hardware Design</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul" id="privacyappend">
+                    <!-- <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li> -->
+
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <!-- <p>&copy; 2019 Something. All rights reserved.</p> -->
+
+            <div class="legal__links">
+                <!-- <span>Made with <span class="heart">♥</span> remotely from Anywhere</span> -->
+                <img src="/Theme1 - Copy/images/paymentcompany.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="paymentmethods">
+    </div>
+
+</div>
+
+
+
+
+
+
+    <!-- j query  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+
+    <script src="/Theme1 - Copy/js/index.js"></script>
+    <script src="/Theme1 - Copy/js/common.js"></script>
+    <!-- <script src="/js/product.js"></script> -->
+
+
+    <script>
+        
+
+        let handmade = [{
+    Name: "Spice Box With 12 Containers",
+    Price: "1,399.00",
+    img: ["https://cdn.shopify.com/s/files/1/0030/9759/1872/products/EL-005-614_A_1800x1800.jpg?v=1600838418",
+        "https://cdn.shopify.com/s/files/1/0030/9759/1872/products/EL-005-614_C_1800x1800.jpg?v=1600838416",
+        "https://cdn.shopify.com/s/files/1/0030/9759/1872/products/EL-005-614_G_343f57ef-d810-4dbc-bd0a-e2838b3a42ab_1800x1800.jpg?v=1610174049"
+    ]
+},
+{
+    Name: "Jute Weaves' Wall Lamp In Jute",
+    Price: "899.00",
+    img: ["https://cdn.shopify.com/s/files/1/0030/9759/1872/products/jute-weaves-wall-lamp-in-jute-_-wood-12-inch-brown-handwoven-el-003-310_1_1800x1800.jpg?v=1658487940",
+        "https://cdn.shopify.com/s/files/1/0030/9759/1872/products/jute-weaves-wall-lamp-in-jute-_-wood-12-inch-brown-handwoven-el-003-310_2_1800x1800.jpg?v=1658487939",
+        "https://cdn.shopify.com/s/files/1/0030/9759/1872/products/jute-weaves-wall-lamp-in-jute-_-wood-12-inch-brown-handwoven-el-003-310_4_1800x1800.jpg?v=1658487939"
+    ]
+},
+{
+    Name: "Handmade & Hand-Painted Garden",
+    Price: "1899.00",
+    img: ["https://cdn.shopify.com/s/files/1/0030/9759/1872/products/EL-002-127_A_1800x1800.jpg?v=1568953176",
+        "https://cdn.shopify.com/s/files/1/0030/9759/1872/products/EL-002-127_C_1800x1800.jpg?v=1568953176",
+        "https://cdn.shopify.com/s/files/1/0030/9759/1872/products/EL-002-127_D_1800x1800.jpg?v=1568953176"
+
+    ]
+},
+{
+    Name: "Lord Krishna Playing Flute",
+    Price: "1899.00",
+    img: ["https://cdn.shopify.com/s/files/1/0039/6397/7828/products/IRKWH503_main_hd_fddaf25e-1dba-401b-b956-cc8c9d0d746d_1080x.jpg?v=1589464092",
+        "https://cdn.shopify.com/s/files/1/0039/6397/7828/products/IRKWH503_main_wdim_c1203911-252b-4375-900f-79626ca882da_1080x.jpg?v=1589464092",
+        "https://cdn.shopify.com/s/files/1/0030/9759/1872/products/EL-002-127_D_1800x1800.jpg?v=1568953176"
+
+    ]
+}
+];
+      
+      
+        document.getElementsByClassName('grid')[0].innerHTML=``
+for(let i=0; i< handmade.length;i++){
+    
+$('.grid').append(`<div class="grid-iteam" data-aos="fade-up">
+                    <div class="image-div">
+                        <img src="${handmade[i].img[0]}" alt="">
+                    </div>
+                    <div class="prouctsdetails">
+                        <h2 class="smallfonth2 productname">${handmade[i].Name}</h2>
+                        <h2 class="smallfonth2 productprice">${handmade[i].Price}</h2>
+                    </div>
+                </div>`)
+}
+    </script>
+
+
+    <!-- light slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+        integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

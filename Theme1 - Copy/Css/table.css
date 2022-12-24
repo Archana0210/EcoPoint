@@ -1,0 +1,122 @@
+.table {
+   
+    border: 1px solid #ECECEC;
+    border-radius: 10px;
+    /* width: calc(100vw - 20rem); */
+    width: 100%;
+
+    /* max-width: 100rem; */
+    margin: auto;
+    background-color: white;
+    margin-top: 7px !important;
+   
+}
+#table-hading{
+    padding: inherit;
+    /* width: calc(100vw - 18rem); */
+    padding: 0 0 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.table-container{
+    padding: 1rem;
+}
+
+
+.table thead tr th {
+    font-size: 14px;
+    font-size: 600;
+    letter-spacing: 0.35px;
+    vertical-align: top;
+    padding: 9px;
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+
+.table tbody tr td {
+    font-size: 14px;
+    font-size: normal;
+    letter-spacing: 0.35px;
+    vertical-align: middle;
+    padding: 8px 5px;
+    column-gap: 0px;
+    text-align: center;
+   /* border-right: 1px solid rgb(193, 191, 191); */
+}
+/* tr:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+} */
+
+.edit,.delete{
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table{
+        background-color: unset;
+    }
+    .table,
+    .table tr,
+    .table td,
+    .table tbody {
+        display: block;
+        /* width: 100%; */
+    }
+    
+
+    .table tbody tr {
+        border: 1px solid #ECECEC;
+        border-radius: 10px;
+        margin: 1rem;
+        padding: 1rem 0;
+        padding-left: 15px;
+        background-color: white;
+    }
+
+   
+    .table tbody tr{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .table tbody tr td {
+        text-align: left;
+        /* padding-left: 50%; */
+        position: relative;
+        /* text-align: left; */
+    }
+
+    .table {
+        border: 1px solid transparent;
+        /* padding: inherit; */
+        padding: 0%;
+        width: unset;
+    }
+    
+   
+
+    .table td::before {
+        display: inline;
+        content: attr(data-label) ;
+        padding-right: 5px;
+        text-align: left;
+        font-weight: 600;
+    }
+    #table-hading{
+        width: 100%;
+
+    }
+
+
+
+}
+

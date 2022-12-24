@@ -1,0 +1,32 @@
+main{
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 50rem;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.aboutusheading{
+    font-size: 2rem !important;
+    margin-bottom: 2rem;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--headingcolor);
+}
+
+main >*{
+    margin: 2rem auto;
+}
+main img {
+    width: 100%;
+}
+
+
+main .shine{
+    min-height: 10rem;
+}

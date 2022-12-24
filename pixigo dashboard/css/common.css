@@ -1,0 +1,552 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+:root{
+    --navheight : 2.5rem;
+    --blue : #3C31F5;
+
+}
+
+.pixigo{
+  cursor: pointer;
+}
+
+.getstarted a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.pdivbtn{
+
+}
+.lohofont{
+    letter-spacing: 1px;
+}
+
+.continuebtnstyl{
+    background-color: var(--blue);
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    margin: 2rem 0; 
+    
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.signuploginbtn{
+    background-color: var(--blue);
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.signuploginbtn p{
+    color: white;
+    font-weight: 500;
+}
+
+#Alreadytakennote{
+  color: #CE0000;
+  display: none;
+}
+#congonote{
+  color: #45C688;
+  margin: 1rem 0;
+  display: none;
+}
+
+
+
+
+
+.flex {
+    display: flex;
+  }
+  .flexitemcenter {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .textdeconone {
+    text-decoration: none;
+  }
+  /* ---------------------------------hover animation----------------------  */
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: var(--header-light-text-color);
+    /* color: #0087ca; */
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--headingcolor);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .hover-underline-animation-active {
+    color: var(--headingcolor) !important;
+  }
+  .hover-underline-animation-active:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 1.5px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--headingcolor);
+    transform-origin: bottom right;
+    /* transition: transform 0.25s ease-out; */
+  }
+  
+  /* ---------------------------------hover animation end ----------------------  */
+  /* btn animation  */
+  
+  
+  
+  .divbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .animatebtn {
+    height: 2.5rem;
+    background-color: var(--btnbackground);
+    color: white;
+    display: flex;
+    min-width: 10rem;
+  
+    /* width: 250px; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    border: 1px solid var(--btnbackground);
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* .animatebtn:hover{
+    box-shadow: inset 250px 0 0 0 white;
+    color: var(--btnbackground);
+    font-weight: 600 !important;
+  
+  } */
+  .animatebtn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    
+    opacity: 0;
+    content: "";
+    background-color: white;
+    color: var(--btnbackground);
+  }
+  .animatebtn:hover{
+    color: var(--btnbackground);
+  }
+  .animatebtn:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    background-color: white;
+  
+    color: var(--btnbackground);
+    font-weight: 600 !important;
+  }
+  
+  
+  
+  
+  
+  .animatebtn-light {
+    height: 2.5rem;
+    background-color: white ;
+    color: var(--btnbackground);
+    display: flex;
+    min-width: 10rem;
+    /* width: 250px; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    border: 1px solid var(--btnbackground);
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  .animatebtn-light:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: var(--btnbackground);
+    color: white;
+  }
+  .animatebtn-light:hover{
+    color: white;
+  }
+  .animatebtn-light:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    background-color: var(--btnbackground);
+  
+    color: white;
+    font-weight: 600 !important;
+  }
+  
+  
+  
+  .animatebtn-light-category {
+    height: 2.5rem;
+    background-color: white ;
+    color: var(--btnbackground);
+    display: flex;
+    min-width: 10rem;
+    /* width: 250px; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    border: 2px solid white;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  .animatebtn-light-category:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    /* background-color: var(--btnbackground); */
+    color: white;
+  }
+  .animatebtn-light-category:hover{
+    transition: 0.5s all ease;
+  
+    color: white;
+    background-color: transparent;
+  }
+  .animatebtn-light-category:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    background-color: transparent;
+  
+    color: white;
+    font-weight: 600 !important;
+  }
+  
+  /* //////////////////////////////////////////////////////////////////// */
+  
+  
+  .menufont {
+    font-size: 1.3rem;
+  }
+  .list > div {
+    margin: 20px 0;
+  }
+  
+  .shine {
+    background: #f6f7f8;
+    background-image: linear-gradient(
+      to right,
+      #f6f7f8 0%,
+      #edeef1 20%,
+      #f6f7f8 40%,
+      #f6f7f8 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 504px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+  
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: placeholderShimmer;
+    -webkit-animation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes placeholderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+  
+    100% {
+      background-position: 468px 0;
+    }
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    /* opacity: 0; */
+    /* transition: transform .5s ,opacity .5s; */
+  }
+  @keyframes ShowMeW {
+    0% {
+      margin-left: -1000px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+  
+  @keyframes hidemew {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -1000px;
+    }
+  }
+  
+  @keyframes ShowMePlus {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  
+  @keyframes hidememinus {
+    0% {
+      height: 100%px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    /* Could be more or less, depending on screen size */
+    max-width: 20rem;
+    min-height: 100vh;
+    /* height: 100%; */
+    margin-left: -1000px;
+    /* transition: all 4s ease-in-out; */
+  
+    animation: ShowMeW 0.5s forwards;
+    position: relative;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: var(--header-light-text-color);
+    /* padding: 10px; */
+    margin-bottom: 17px;
+    font-size: 28px;
+    font-weight: bold;
+  
+    position: absolute;
+    right: 1rem;
+    top: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  
+  #body {
+    width: 100%;
+    background-color: #F5F6FB;
+  }
+  
+  
+  .desktopnavbar {
+    display: none;
+  }
+  .mobilenavbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 4rem;
+    align-items: center;
+    background-color: white;
+    /* background-color: rgb(199, 199, 199);
+    border-bottom: 1.5px solid #888; */
+  }
+  .menu span {
+    color: var(--headingcolor);
+    font-size: 2.1rem;
+    padding-top: 10px;
+  }
+
+  .contentbody{
+    min-height: calc(100vh - 4rem);
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 1rem;
+
+  }
+  
+  .menulist{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+  }
+  .activemenu::before{
+    content: '';
+    width: 4px;
+    height: 3rem;
+    background-color: #7B58DF;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: -1.8rem;
+  }
+  .activemenu{
+    background-color: #F9F9FB;
+  }
+  .activemenu .icon{
+    color: #7B58DF;
+
+  }
+  .activemenu .text{
+    font-weight: 600;
+  }
+  .menu:hover{
+    background-color: #F9F9FB;
+  }
+
+  .menu:hover .icon{
+    color: #7B58DF;
+  }
+  
+
+  .icon{
+ width: 2.5rem;
+ transition: all 0.2s ease-in-out;
+
+  }
+  .icon i{
+    font-size: 1.5rem;
+    padding-top: 5px;
+  }
+  .text{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  /* desktop view  */
+  @media only screen and (min-width: 786px) {
+
+    .mobilenavbar {
+      display: none;
+    }
+  
+    .desktopnavbar {
+      display: inline-block;
+      width: 16rem;
+      min-height: 100vh;
+      padding-right: 2rem;
+      /* padding-left: 2rem; */
+      padding-top: 2rem;
+      position: sticky;
+      top: 0;
+      background-color: white;
+
+    }
+    .contentbody {
+      width: calc(100vw - 20rem);
+      
+      padding-left: 2rem;
+      max-width: 1700px;
+      margin: auto;
+      
+      margin-top: 2rem;
+    }
+    #body {
+      display: flex;
+      align-items: flex-start;
+
+    }
+  }
+  
+
